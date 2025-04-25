@@ -7,7 +7,7 @@
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -25,15 +25,12 @@
         header h1 {
             margin: 0;
         }
-
-        nav ul {
+        ul li {
             list-style: none;
             padding: 0;
             margin: 1rem 0;
-            display: flex;
-            justify-content: center;
+            display: inline;
         }
-
         nav ul li {
             margin: 0 1rem;
         }
@@ -44,9 +41,6 @@
             font-weight: bold;
         }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
 
         main {
             max-width: 800px;
@@ -86,14 +80,10 @@
             padding: 10px 20px;
             border: none;
             background-color: yellow;
-            color: bluea;
+            color: blue;
             font-size: 1rem;
             border-radius: 5px;
             cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #00337a;
         }
     </style>
 </head>
@@ -107,25 +97,16 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="contact">
-<hr>
-        <p>Follow us on:</p>
-        <a href="https://www.instagram.com/fdre66/" target="_blank">Instagram</a>
-        <a href="https://x.com/fdre66" target="_blank">X</a>
-        <p>Or reach us at:</p>
-        <a href="tel:+99196815">+99196815</a>
-    
-
-            <h2>We'd Love to Hear From You!</h2>
+        <section>
+			<h2>We'd Love to Hear From You!</h2>
             <p>Please fill out the form below, and we’ll get back to you as soon as possible.</p>
-            <form action="#" method="POST">
-                <label for="  name"> PLS write your name</label>
-                <input type="text" id="name" name="name"  placeholder="PLS write your name" rows="8" required>
+            <form>
+                <label for="  name">Name</label>
+                <input type="text" id="name" name="name"  placeholder="Name" rows="8" required>
                 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your Email Address" required>
